@@ -1,0 +1,97 @@
+.node-overlay {
+	-fx-border-style: none none dotted none;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+}
+
+.right-link-handle:hover {
+	-fx-background-color:
+	rgba(0, 0, 0, 0.35);
+}
+
+.left-link-handle:hover {
+	-fx-background-color:
+	rgba(0, 0, 0, 0.35);
+}
+
+.top-link-handle:hover {
+	-fx-background-color:
+	rgba(0, 0, 0, 0.35);
+}
+
+.bottom-link-handle:hover {
+	-fx-background-color:
+	rgba(0, 0, 0, 0.35);
+}
+
+.icon-entity{
+    -fx-background-color: #f5b67a;
+    -fx-border-style: none none dotted none;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.icon-view{
+    -fx-background-color: #fff2cc;
+    -fx-border-style: none none dotted none;
+    -fx-border-color: black;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.icon-trigger{
+    -fx-shape: "m 0 0 H 11 V 6 H 0 C 1 5 1 1 0 0";
+    -fx-background-color: #86dae5;
+    -fx-border-style: none none dotted none;
+    -fx-border-color: black;
+}
+
+.icon-procedure{
+    -fx-background-color: yellow;
+    -fx-border-style: none none dotted none;
+    -fx-border-color: black;
+    -fx-border-radius: 10 10 0 0;
+     -fx-background-radius: 10 10 0 0;
+}
+
+.icon-result-set{
+    -fx-background-color: yellow;
+    -fx-border-style: none none dotted none;
+    -fx-border-color: black;
+}
+
+.icon-note{
+    -fx-shape: "m 0 0 V 7 H 18 V 1 C 16 0 18 1 16 0 Z";
+    -fx-background-color: deepskyblue;
+    -fx-border-style: none none dotted none;
+    -fx-border-color: black;
+}
+
+.icon-blue {
+	-fx-background-color: blue;
+}
+
+.icon-red {
+	-fx-background-color: red;
+}
+
+.icon-green {
+	-fx-background-color: green;
+}
+
+.icon-brown {
+	-fx-background-color: brown;
+}
+
+.icon-grey {
+	-fx-background-color: grey;
+}
+
+.icon-yellow {
+	-fx-background-color: yellow;
+}
+
+.icon-purple {
+	-fx-background-color: purple;
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root fx:id="root_pane" minHeight="200.0" minWidth="200.0" stylesheets="@application.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar fx:id="menu_bar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="menu_item_new" mnemonicParsing="false" text="New diagram" />
+                  <MenuItem fx:id="menu_item_export" mnemonicParsing="false" text="Export" />
+                  <MenuItem fx:id="menu_item_save" mnemonicParsing="false" text="Save" />
+                  <MenuItem fx:id="menu_item_load" mnemonicParsing="false" text="Load" />
+              <MenuItem fx:id="menu_item_close" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="menu_item_about" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane fx:id="base_pane" dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+        <items>
+            <ScrollPane fitToHeight="true" hbarPolicy="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0">
+               <padding>
+                  <Insets left="8.0" top="6.0" />
+               </padding>
+               <content>
+                  <VBox spacing="10.0">
+                     <children>
+                        <ChoiceBox fx:id="menu_diagram" prefHeight="25.0" prefWidth="91.0" />
+                        <ChoiceBox fx:id="menu_arrow" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="91.0" />
+                        <VBox fx:id="left_pane" spacing="10.0" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+          <AnchorPane fx:id="right_pane" />
+        </items>
+      </SplitPane>
+   </children>
+</fx:root>
